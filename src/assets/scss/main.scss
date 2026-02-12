@@ -4,6 +4,8 @@
 @use "./helper";
 @use "./components/common.components.btn";
 @use "./components/components.common.heading";
+@use "./layout/footer";
+@use "./layout/header";
 
 body{
     font-family: $font-common;

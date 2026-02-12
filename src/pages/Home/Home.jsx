@@ -6,6 +6,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import Footer from "../../Components/Footer";
 const Home = ()=>{
     const sliderImg=[
         {id:1, image:"./images/banner-slider/banner-01.jpg", tag:"slider-image"},
@@ -106,7 +107,7 @@ const Home = ()=>{
                     </Row>
                 </Container>
             </section>
-            <section className="aboutSec">
+            <section className="aboutSec py-80 pt-0">
                 <Container>
                     <Row className="g-5">
                         <Col lg={7}>
@@ -116,7 +117,7 @@ const Home = ()=>{
                                     <h2 className="commonHead_title">Simplifying Renting,<br className="d-lg-block d-none"/> Redefining Living</h2>
                                     <p className="commonHead_para mb-0">We connect tenants and property owners through a smart, transparent, and hassle-free rental ecosystem. From discovering verified homes to moving in with confidence, our platform makes renting faster, safer, and more convenient—so you can focus on living, not searching.</p>
                                 </div>
-                                <div className="aboutSec_left_control d-flex gap-3 mb-4">
+                                <div className="aboutSec_left_control d-flex gap-3 mb-5">
                                     <img src="./images/home-control.avif" className="img-fluid" alt="home-control-image"/>
                                     <ul className="aboutSec_left_list list-unstyled">
                                         {controlList.map((list)=>(
@@ -124,7 +125,7 @@ const Home = ()=>{
                                         ))}
                                     </ul>
                                 </div>
-                                <p className="aboutSec_left_belief">We believe finding a home should be simple, trustworthy, and stress-free—not confusing or time-consuming.</p>
+                                <p className="aboutSec_left_belief py-4">We believe finding a home should be simple, trustworthy, and stress-free—not confusing or time-consuming.</p>
                                 <Buttons variant="primary" size="lg" value={`Learn More`} />
                             </div>
                         </Col>
@@ -134,13 +135,14 @@ const Home = ()=>{
                                 <div className="position-relative aboutSec_right_cnt">
                                     <i class="fa-solid fa-quote-right"></i>
                                     <p>A good rental experience isn’t just about a house—it’s about feeling secure, supported, and at home from day one.</p>
-                                    <span className="fs-5">Team, Rental Home</span>
+                                    <span className="fs-5">_Team, Rental Home</span>
                                 </div>
                             </div>
                         </Col>
                     </Row>
                 </Container>
             </section>
+            <Footer/>
         </>
     )
 }

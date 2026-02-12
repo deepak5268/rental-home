@@ -1,0 +1,51 @@
+@use "../variable" as *;
+
+// footer
+
+.footer{
+    background-color: color(600);
+    &_info{
+        &_title{
+            font-size: 24px;
+            color: color(50);
+            margin-bottom: 20px;
+        }
+        &_item{
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+            color: color(50);
+            font-size: 18px;
+            font-weight: 300;
+            &:not(:last-child){
+                margin-bottom: 15px;
+            }
+            i{font-size: 20px; transition: all 0.3s ease-in-out;}
+            a{
+                color: color(50);text-decoration: none;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    color: color(500);
+                    i{color: color(500);}
+                } 
+            }
+        }
+    }
+    &_copyRight{
+        border-top: 1px solid color(500);
+        margin-top: 40px;
+        padding-block: 30px;
+        p{
+            color: color(50);
+            a{
+                color: color(50);text-decoration: none;
+                transition: all 0.3s ease-in-out;
+                &:hover{
+                    color: color(500);
+                    i{color: color(500);}
+                } 
+            }
+
+        }
+    }
+}
