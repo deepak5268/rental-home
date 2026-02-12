@@ -1,0 +1,12 @@
+$font-common: "Poppins", sans-serif;;
+$font-comrnt: "Cormorant", sans-serif;
+
+$color: (
+  50: #fff,
+  500: #fe607c,
+  900: #000000
+);
+
+@function color($key) {
+  @return map-get($color, $key);
+}

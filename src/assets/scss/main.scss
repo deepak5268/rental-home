@@ -1,0 +1,15 @@
+@use "./variable" as *;
+
+@use "./pages/home";
+@use "./helper";
+@use "./components/common.components.btn";
+@use "./components/components.common.heading";
+
+body{
+    font-family: $font-common;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1464px;
+}
