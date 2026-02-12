@@ -168,3 +168,42 @@
         span{font-weight: 600;}
     }
 }
+
+//contact section 
+.contactSec{
+    position: relative;
+    background-color: rgba($color: color(500), $alpha: 0.2);
+    &_left{
+        padding-right: 40px;
+    }
+    &_right{
+        position: absolute;
+        top: 0;
+    }
+}
+
+//form style
+.form-floating{
+    margin-bottom: 30px;
+    label{color: color(600);}
+    .form-control{
+        border-color: color(600);
+        background-color: transparent;
+        border-radius: 0;
+        &:focus{
+            border-color: color(500);
+            box-shadow: none;
+        }
+    }
+    .form-control:focus + label{
+        color: color(500);
+    }
+    textarea{
+        &.form-control{
+            min-height: 100px;
+        }
+        &:focus~label::after, &:not(:placeholder-shown)~label::after{
+            background-color: transparent;
+        }
+    }
+}

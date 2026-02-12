@@ -5,10 +5,11 @@
 .footer{
     background-color: color(600);
     &_info{
+        &-first{max-width: 350px;}
         &_title{
             font-size: 24px;
             color: color(50);
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         &_item{
             display: flex;
@@ -18,17 +19,16 @@
             font-size: 18px;
             font-weight: 300;
             &:not(:last-child){
-                margin-bottom: 15px;
+                margin-bottom: 25px;
             }
             i{font-size: 20px; transition: all 0.3s ease-in-out;}
             a{
                 color: color(50);text-decoration: none;
-                transition: all 0.3s ease-in-out;
-                &:hover{
-                    color: color(500);
-                    i{color: color(500);}
-                } 
+                transition: all 0.3s ease-in-out; line-height: 1.2;
             }
+            &:hover{
+                a, i{color: color(500);}
+            } 
         }
     }
     &_copyRight{

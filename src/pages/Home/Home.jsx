@@ -2,7 +2,7 @@ import Buttons from "../../Components/Buttons/Buttons";
 import Header from "../../Components/Header";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {Pagination, Autoplay } from "swiper/modules";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, FloatingLabel, Form, Row } from "react-bootstrap";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -137,6 +137,40 @@ const Home = ()=>{
                                     <p>A good rental experience isn’t just about a house—it’s about feeling secure, supported, and at home from day one.</p>
                                     <span className="fs-5">_Team, Rental Home</span>
                                 </div>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+            <section className="contactSec">
+                <Container>
+                    <Row className="g-0">
+                        <Col lg={6}>
+                            <div className="contactSec_left py-80">
+                                <div className="commonHead">
+                                    <span className="commonHead_subTitle">Contact Us</span>
+                                    <h2 className="commonHead_title">Get In Touch</h2>
+                                </div>
+                                <Form>
+                                    <FloatingLabel label="Full Name">
+                                        <Form.Control type="text" placeholder="Enter name" />
+                                    </FloatingLabel>
+                                    <FloatingLabel label="Email Address">
+                                        <Form.Control type="email" placeholder="Enter email" />
+                                    </FloatingLabel>
+                                    <FloatingLabel  label="Phone Number">
+                                        <Form.Control type="text" placeholder="Enter phone number" />
+                                    </FloatingLabel>
+                                    <FloatingLabel label="Message">
+                                        <Form.Control as="textarea" placeholder="Write message"/>
+                                    </FloatingLabel>
+                                    <Buttons extraClass={"mt-4"} variant="primary" size="lg" value={`Submit Now`} />
+                                </Form>
+                            </div>
+                        </Col>
+                        <Col lg={6}>
+                            <div className="contactSec_right h-100">
+                                <img src="./images/care-step.jpg" className="img-fluid h-100 object-fit-cover" alt="contact-image" />
                             </div>
                         </Col>
                     </Row>
